@@ -119,8 +119,8 @@ int main() {
   }
  
   cout<<endl;
-  cout<<"***Suddenly an entity appears.**\n";
-  cout << "Press Enter to find out who this entity is...";
+  cout<<"\033[1;31m ***Suddenly an entity appears.***\033[0m\n";
+  cout << "Hit Enter to find out who this entity is...";
   waitForKey();
   cout << R"(
                   /\
@@ -144,7 +144,7 @@ int main() {
 
     ++T; ++T;
     cout << "\nTwo stones pulse with a hungry, purple light on the Gauntlet Thanos holds." << endl;
-    cout << "[ Press ENTER to let him test their hunger ]";
+    cout << "Press ENTER to let him test their hunger...";
     waitForKey();
     T.snap_finger(m, n);
 
@@ -182,7 +182,7 @@ int main() {
   T.snap_finger(m,n);//Clear hp n/2(half) of the monster. 
   cout << "\n'Smile,' Thanos commands. 'For even in death, you have become children of balance.'" << endl;
 
-    cout << "\nPress ENTER to count the survivors...";
+    cout << "\nPress ENTER to witness the survivors...";
     waitForKey();
 
     cout << "\n\033[1;30m*** Half of the names have been carved from existence. ***\033[0m" << endl;
